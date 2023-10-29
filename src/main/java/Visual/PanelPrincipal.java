@@ -1,4 +1,4 @@
-package org.example;
+package Visual;
 
 import javax.swing.*;
 import java.awt.*;
@@ -18,3 +18,4 @@ public class PanelPrincipal extends JPanel {
         exp.paint(g); //llama al metodo paint definido en el PanelExpendedor
     }
 }
+

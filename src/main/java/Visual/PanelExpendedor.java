@@ -1,8 +1,8 @@
-package org.example;
+package Visual;
 
 import java.awt.*;
 
-public class PanelComprador {
+public class PanelExpendedor {
     public void paint(Graphics g){
 
     }
