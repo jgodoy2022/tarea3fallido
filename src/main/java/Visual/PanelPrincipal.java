@@ -11,10 +11,10 @@ public class PanelPrincipal extends JFrame {
         exp = new PanelExpendedor ();
         com = new PanelComprador();
         panel=new JPanel(new BorderLayout());
+
         this.setBackground(Color.white);
 
-        panel.add(com, BorderLayout.NORTH);
-        panel.add(exp, BorderLayout.CENTER);
+        panel.add(com, BorderLayout.EAST);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(1000, 800);
