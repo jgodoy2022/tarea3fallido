@@ -15,6 +15,7 @@ public class PanelPrincipal extends JFrame {
         this.setBackground(Color.white);
 
         panel.add(com, BorderLayout.EAST);
+        panel.add(exp, BorderLayout.CENTER);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(1000, 800);
