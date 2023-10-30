@@ -6,16 +6,20 @@ import java.awt.*;
 public class PanelPrincipal extends JFrame {
     private PanelComprador com;
     private PanelExpendedor exp;
+    private JPanel panel;
     public PanelPrincipal () {
         exp = new PanelExpendedor ();
         com = new PanelComprador();
+        panel=new JPanel(new BorderLayout());
         this.setBackground(Color.white);
+
+        panel.add(com, BorderLayout.NORTH);
+        panel.add(exp, BorderLayout.CENTER);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(1000, 800);
 
-        this.add(com);
-        this.add(exp);
+        this.add(panel);
 
         this.setVisible(true);
     }
