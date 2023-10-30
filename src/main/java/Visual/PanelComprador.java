@@ -3,11 +3,13 @@ package Visual;
 import javax.swing.*;
 
 public class PanelComprador extends JPanel {
-    private JButton peneButton;
-    private JPanel panel1;
-
+    private JButton thebutton;
+    private JButton raulButton;
     public PanelComprador() {
-        peneButton = new JButton("poki");
-        this.add(peneButton);
+        JLabel nombre  = new JLabel("Nombre");
+        thebutton = new JButton("poki");
+        raulButton=new JButton("raul");
+        this.add(nombre);
+        this.add(raulButton);
     }
 }
