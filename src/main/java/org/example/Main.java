@@ -1,8 +1,12 @@
 package org.example;
 
+import Visual.PanelPrincipal;
+
 public class Main {
     public static void main(String[] args) {
         //expendedor con solo 3 productos para hacer 4 compras y la ultima sea invalida por falta de producto
+        PanelPrincipal a=new PanelPrincipal();
+
         Expendedor exp = new Expendedor(3);
         Moneda m = null;
         Comprador c=null;
