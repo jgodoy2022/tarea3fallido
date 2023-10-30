@@ -13,6 +13,8 @@ public class PanelExpendedor extends JPanel {
     public void paint (Graphics g){
         super.paint(g);
         g.setColor(Color.red);
-        g.fillOval(100,100,100,100); //o llamar a paint de objetos creados
+        g.fillOval(100,100,100,100);//o llamar a paint de objetos creados
+        g.drawOval(100,100,100,100);
+        g.fillOval(150,100,100,100);
     }
 }

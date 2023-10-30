@@ -10,15 +10,25 @@ public class PanelComprador extends JPanel {
     public PanelComprador() {
         this.setBackground(Color.pink);
         this.setLayout(new GridLayout(5,2));
-        this.add(new JButton("coca"));
-        this.add(new JLabel("$1000"));
-        this.add(new JButton("sprite"));
-        this.add(new JLabel("$1000"));
-        this.add(new JButton("fanta"));
-        this.add(new JLabel("$1000"));
-        this.add(new JButton("snickers"));
-        this.add(new JLabel("$700"));
-        this.add(new JButton("super8"));
-        this.add(new JLabel("$500"));
+        JButton coca = new JButton("CocaCola");
+        JLabel precioCoca = new JLabel("        $1000");
+        JButton sprite = new JButton("Sprite");
+        JLabel precioSprite = new JLabel("       $1000");
+        JButton fanta = new JButton("Fanta");
+        JLabel precioFanta = new JLabel("       $1000");
+        JButton snickers = new JButton("Snickers");
+        JLabel precioSnickers = new JLabel("        $700");
+        JButton super8 = new JButton("Super8");
+        JLabel precioSuper8 = new JLabel("        $500");
+        this.add(coca);
+        this.add(precioCoca);
+        this.add(sprite);
+        this.add(precioSprite);
+        this.add(fanta);
+        this.add(precioFanta);
+        this.add(snickers);
+        this.add(precioSnickers);
+        this.add(super8);
+        this.add(precioSuper8);
     }
 }
