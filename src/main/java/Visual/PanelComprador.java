@@ -2,11 +2,10 @@ package Visual;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class PanelComprador extends JPanel {
-    private JButton thebutton;
-    private JButton raulButton;
     public PanelComprador() {
         this.setBackground(Color.pink);
         this.setLayout(new GridLayout(5,2));
@@ -30,5 +29,17 @@ public class PanelComprador extends JPanel {
         this.add(precioSnickers);
         this.add(super8);
         this.add(precioSuper8);
+        coca.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setBackground(Color.WHITE);
+            }
+        });
+        sprite.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setBackground(Color.BLUE);
+            }
+        });
     }
 }
