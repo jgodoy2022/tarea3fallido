@@ -6,16 +6,19 @@ import java.awt.*;
 public class PanelPrincipal extends JFrame {
     private PanelComprador com;
     private PanelExpendedor exp;
+    private prueba test;
     private JPanel panel;
     public PanelPrincipal () {
         exp = new PanelExpendedor ();
         com = new PanelComprador();
+        test = new prueba();
         panel=new JPanel(new BorderLayout());
 
         this.setBackground(Color.white);
 
         panel.add(com, BorderLayout.EAST);
-        panel.add(exp, BorderLayout.CENTER);
+        //panel.add(exp, BorderLayout.CENTER);
+        panel.add(test, BorderLayout.CENTER);
 
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(1000, 800);
@@ -28,7 +31,8 @@ public class PanelPrincipal extends JFrame {
         super.paint(g); //llama al método pint al que hace override en la super
 //el de la super clase solo pinta el fondo (background)
         com.paint(g); //llama al metodo paint definido en el PanelComprador
-        exp.paint(g); //llama al metodo paint definido en el PanelExpendedor
+        //exp.paint(g); //llama al metodo paint definido en el PanelExpendedor
+        test.paint(g);
     }
 }
 
